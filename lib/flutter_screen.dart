@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class Screen {
+class FlutterScreen {
   static const MethodChannel _channel = const MethodChannel('github.com/clovisnicolas/flutter_screen');
 
   static Future<double?> get brightness async => (await _channel.invokeMethod('brightness')) as double?;
